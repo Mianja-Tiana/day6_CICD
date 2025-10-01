@@ -9,7 +9,8 @@ def test_root():
     with TestClient(app) as client:
         response = client.get("/")
         assert response.status_code == 200
-        assert response.json() == {"message":"Hello World"}
+        #assert response.json() == {"message":"Hello World"}
+        assert response.json() == {"message":"Bonjour le monde"}
 
 def test_health_check():
     with TestClient(app) as client:

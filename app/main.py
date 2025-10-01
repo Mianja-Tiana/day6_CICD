@@ -82,4 +82,4 @@ async def predict(
     model = ml_models[model_name]
     prediction = model.predict(input_data)
 
-    return {"model": model_name, "prediction": int(prediction[0])}
+    return {"model": model_name, "prediction": int(prediction[0])}#test
